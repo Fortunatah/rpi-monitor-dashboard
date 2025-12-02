@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Raspberry Pi System Monitor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #111827;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .label {
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+    .value {
+      font-size: 1.4rem;
+      margin-top: 4px;
+    }
+    .timestamp {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Raspberry Pi System Monitor</h1>
+    <div id="status" class="timestamp">Loading...</div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="label">CPU Usage</div>
+        <div class="value" id="cpu">-</div>
+      </div>
+      <div class="card">
+        <div class="label">RAM Usage</div>
+        <div class="value" id="ram">-</div>
+      </div>
+      <div class="card">
+        <div class="label">Disk Usage</div>
+        <div class="value" id="disk">-</div>
+      </div>
+      <div class="card">
+        <div class="label">Temperature</div>
+        <div class="value" id="temp">-</div>
+      </div>
+      <div class="card">
+        <div class="label">Network (sent / recv)</div>
+        <div class="value" id="net">-</div>
+      </div>
+      <div class="card">
+        <div class="label">Uptime</div>
+        <div class="value" id="uptime">-</div>
+      </div>
+    </div>
+
+    <div class="timestamp" id="timestamp"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
