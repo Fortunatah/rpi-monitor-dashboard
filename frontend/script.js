@@ -1,5 +1,7 @@
+
+
 // CHANGE THIS TO YOUR PI'S IP OR HOSTNAME
-const API_BASE = "http://<pi-ip>:8000";
+const API_BASE =  window.location.origin;
 
 async function fetchMetrics() {
   const statusEl = document.getElementById("status");
