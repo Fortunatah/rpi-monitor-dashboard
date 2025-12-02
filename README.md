@@ -80,7 +80,11 @@ rpi-monitor-dashboard/
 
 │   └── script.js
 
+├── Example-dashboard.png      
+
 └── README.md
+
+
 
 
 
@@ -106,7 +110,7 @@ Install required system packages
 
 Clone the repository
 
-&nbsp;	git clone https://github.com/<your-username>/rpi-monitor-dashboard.git
+&nbsp;	git clone https://github.com/fortunatah/rpi-monitor-dashboard.git
 
 &nbsp;	cd rpi-monitor-dashboard
 
@@ -136,7 +140,15 @@ Run the API server
 
 Access the API at
 
-&nbsp;	http://<pi-ip>:8000/api/metrics/latest
+&nbsp;	http://<pi-ip>:8000/
+
+
+
+See example dashboard on what dashboard should look like if program is ran properly.
+
+
+
+&nbsp;	
 
 
 
